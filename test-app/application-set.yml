@@ -11,7 +11,7 @@ spec:
             test: "true"
   template:      
     metadata:
-      name: '{{.name}}-billing'
+      name: 'test-billing'
     spec:
       # The project the application belongs to.
       project: default
