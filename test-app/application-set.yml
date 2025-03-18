@@ -7,10 +7,8 @@ spec:
   generators:
     - clusters:
         selector:
-          matchExpressions:
-            - key: name
-              operator: NotIn
-              values: [in-cluster]
+          matchLabels:
+            test: "true"
   template:      
     metadata:
       name: '{{.name}}-billing'
