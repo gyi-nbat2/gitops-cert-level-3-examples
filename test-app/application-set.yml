@@ -24,7 +24,7 @@ spec:
       
       # Destination cluster and namespace to deploy the application
       destination:
-        server: '{{.server}}'
+        server: '{{server}}'
         namespace: 'test'
 
       # Sync policy
