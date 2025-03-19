@@ -7,13 +7,11 @@ spec:
   generators:
     - clusters:
         selector:
-          matchExpressions:
-            - key: name
-              operator: NotIn
-              values: ["hub"]
+          matchLabels:
+            test: "true"
   template:      
     metadata:
-      name: 'test-billing-{{server}}'
+      name: '{{name}}-test'
     spec:
       # The project the application belongs to.
       project: default
