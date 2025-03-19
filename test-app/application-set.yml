@@ -5,7 +5,12 @@ metadata:
   namespace: argocd
 spec:
   generators:
-    - clusters: {}
+    - clusters:
+        selector:
+          matchExpressions:
+            - key: name
+              operator: NotIn
+              values: ["hub"]
   template:      
     metadata:
       name: 'test-billing'
