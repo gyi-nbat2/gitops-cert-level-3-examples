@@ -13,7 +13,7 @@ spec:
               values: ["hub"]
   template:      
     metadata:
-      name: 'test-billing'
+      name: 'test-billing-{{server}}'
     spec:
       # The project the application belongs to.
       project: default
