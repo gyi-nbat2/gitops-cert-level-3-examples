@@ -5,10 +5,7 @@ metadata:
   namespace: argocd
 spec:
   generators:
-    - clusters:
-        selector:
-          matchLabels:
-            test: "true"
+    - clusters: {}
   template:      
     metadata:
       name: 'test-billing'
